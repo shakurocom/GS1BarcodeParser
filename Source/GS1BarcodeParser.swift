@@ -117,6 +117,8 @@ public class GS1BarcodeParser {
     /// Default value is 
     public var elementDescriptions: [GS1BarcodeParser.ElementDescription] = GS1BarcodeParser.defaultElementDescriptions()
 
+    public init() {}
+
     // MARK: - Public
 
     public func parse(string fullString: String) throws -> GS1Barcode {
