@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AEDFC542E42733EDD227316 /* Pods_GS1Barcode_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274CC0D22CCCDCCF036A2748 /* Pods_GS1Barcode_Example.framework */; };
+		6B41DF4A28CA176D005898D9 /* GS1Barcode_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41DF4928CA176D005898D9 /* GS1Barcode_Framework.framework */; };
+		6B41DF4B28CA176D005898D9 /* GS1Barcode_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41DF4928CA176D005898D9 /* GS1Barcode_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6B41DF5228CA1CD8005898D9 /* GS1BarcodeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41DF5028CA1C96005898D9 /* GS1BarcodeParserTest.swift */; };
+		6B6FC0EC28C9E90700C7F760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FC0EB28C9E90700C7F760 /* AppDelegate.swift */; };
+		6B6FC0F028C9E90700C7F760 /* ExampleGS1BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FC0EF28C9E90700C7F760 /* ExampleGS1BarcodeViewController.swift */; };
+		6B6FC0F328C9E90700C7F760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6FC0F128C9E90700C7F760 /* Main.storyboard */; };
+		6B6FC0F528C9E90700C7F760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6FC0F428C9E90700C7F760 /* Assets.xcassets */; };
+		6B6FC0F828C9E90700C7F760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6FC0F628C9E90700C7F760 /* LaunchScreen.storyboard */; };
+		6B6FC10028C9EC7A00C7F760 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6B6FC0FF28C9EC7900C7F760 /* .swiftlint.yml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B6FC12028CA13F100C7F760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B6FC0E028C9E90700C7F760 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B6FC0E728C9E90700C7F760;
+			remoteInfo = GS1Barcode_Example;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B41DF4C28CA176D005898D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6B41DF4B28CA176D005898D9 /* GS1Barcode_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		274CC0D22CCCDCCF036A2748 /* Pods_GS1Barcode_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GS1Barcode_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B41DF4928CA176D005898D9 /* GS1Barcode_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GS1Barcode_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B41DF5028CA1C96005898D9 /* GS1BarcodeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS1BarcodeParserTest.swift; sourceTree = "<group>"; };
+		6B6FC0E828C9E90700C7F760 /* GS1Barcode_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GS1Barcode_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6FC0EB28C9E90700C7F760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B6FC0EF28C9E90700C7F760 /* ExampleGS1BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGS1BarcodeViewController.swift; sourceTree = "<group>"; };
+		6B6FC0F228C9E90700C7F760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B6FC0F428C9E90700C7F760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B6FC0F728C9E90700C7F760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B6FC0F928C9E90700C7F760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B6FC0FF28C9EC7900C7F760 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		6B6FC11C28CA13F100C7F760 /* GS1Barcode_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GS1Barcode_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1723C075A305879D205CA3 /* Pods-GS1Barcode_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1Barcode_Example.debug.xcconfig"; path = "Target Support Files/Pods-GS1Barcode_Example/Pods-GS1Barcode_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E98EE904A58C65837C78AB3C /* Pods-GS1Barcode_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1Barcode_Example.release.xcconfig"; path = "Target Support Files/Pods-GS1Barcode_Example/Pods-GS1Barcode_Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B6FC0E528C9E90700C7F760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B41DF4A28CA176D005898D9 /* GS1Barcode_Framework.framework in Frameworks */,
+				5AEDFC542E42733EDD227316 /* Pods_GS1Barcode_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B6FC11928CA13F100C7F760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22567C1BDB65CD8E13E5A3F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB1723C075A305879D205CA3 /* Pods-GS1Barcode_Example.debug.xcconfig */,
+				E98EE904A58C65837C78AB3C /* Pods-GS1Barcode_Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B41DF4F28CA1C96005898D9 /* GS1BarcodeTest */ = {
+			isa = PBXGroup;
+			children = (
+				6B41DF5028CA1C96005898D9 /* GS1BarcodeParserTest.swift */,
+			);
+			path = GS1BarcodeTest;
+			sourceTree = "<group>";
+		};
+		6B6FC0DF28C9E90700C7F760 = {
+			isa = PBXGroup;
+			children = (
+				6CC02C99C06950802A34E87C /* Frameworks */,
+				6B6FC0EA28C9E90700C7F760 /* GS1Barcode_Example */,
+				6B41DF4F28CA1C96005898D9 /* GS1BarcodeTest */,
+				22567C1BDB65CD8E13E5A3F7 /* Pods */,
+				6B6FC0E928C9E90700C7F760 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B6FC0E928C9E90700C7F760 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B6FC0E828C9E90700C7F760 /* GS1Barcode_Example.app */,
+				6B6FC11C28CA13F100C7F760 /* GS1Barcode_ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B6FC0EA28C9E90700C7F760 /* GS1Barcode_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6B6FC0EB28C9E90700C7F760 /* AppDelegate.swift */,
+				6B6FC0EF28C9E90700C7F760 /* ExampleGS1BarcodeViewController.swift */,
+				6B6FC0F128C9E90700C7F760 /* Main.storyboard */,
+				6B6FC0F428C9E90700C7F760 /* Assets.xcassets */,
+				6B6FC0F628C9E90700C7F760 /* LaunchScreen.storyboard */,
+				6B6FC0F928C9E90700C7F760 /* Info.plist */,
+				6B6FC0FF28C9EC7900C7F760 /* .swiftlint.yml */,
+			);
+			path = GS1Barcode_Example;
+			sourceTree = "<group>";
+		};
+		6CC02C99C06950802A34E87C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B41DF4928CA176D005898D9 /* GS1Barcode_Framework.framework */,
+				274CC0D22CCCDCCF036A2748 /* Pods_GS1Barcode_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B6FC0E728C9E90700C7F760 /* GS1Barcode_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B6FC0FC28C9E90700C7F760 /* Build configuration list for PBXNativeTarget "GS1Barcode_Example" */;
+			buildPhases = (
+				CBD82BD9EAAF92B73622658B /* [CP] Check Pods Manifest.lock */,
+				6B6FC10128C9EC9300C7F760 /* Swiftlint */,
+				6B6FC0E428C9E90700C7F760 /* Sources */,
+				6B6FC0E528C9E90700C7F760 /* Frameworks */,
+				6B6FC0E628C9E90700C7F760 /* Resources */,
+				6B41DF4C28CA176D005898D9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GS1Barcode_Example;
+			productName = GS1Barcode_Example;
+			productReference = 6B6FC0E828C9E90700C7F760 /* GS1Barcode_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B6FC11B28CA13F100C7F760 /* GS1Barcode_ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B6FC12428CA13F100C7F760 /* Build configuration list for PBXNativeTarget "GS1Barcode_ExampleTests" */;
+			buildPhases = (
+				6B6FC11828CA13F100C7F760 /* Sources */,
+				6B6FC11928CA13F100C7F760 /* Frameworks */,
+				6B6FC11A28CA13F100C7F760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B6FC12128CA13F100C7F760 /* PBXTargetDependency */,
+			);
+			name = GS1Barcode_ExampleTests;
+			productName = GS1Barcode_ExampleTests;
+			productReference = 6B6FC11C28CA13F100C7F760 /* GS1Barcode_ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B6FC0E028C9E90700C7F760 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					6B6FC0E728C9E90700C7F760 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					6B6FC11B28CA13F100C7F760 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 6B6FC0E728C9E90700C7F760;
+					};
+				};
+			};
+			buildConfigurationList = 6B6FC0E328C9E90700C7F760 /* Build configuration list for PBXProject "GS1Barcode_Example" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B6FC0DF28C9E90700C7F760;
+			productRefGroup = 6B6FC0E928C9E90700C7F760 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B6FC0E728C9E90700C7F760 /* GS1Barcode_Example */,
+				6B6FC11B28CA13F100C7F760 /* GS1Barcode_ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B6FC0E628C9E90700C7F760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6FC10028C9EC7A00C7F760 /* .swiftlint.yml in Resources */,
+				6B6FC0F828C9E90700C7F760 /* LaunchScreen.storyboard in Resources */,
+				6B6FC0F528C9E90700C7F760 /* Assets.xcassets in Resources */,
+				6B6FC0F328C9E90700C7F760 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B6FC11A28CA13F100C7F760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B6FC10128C9EC9300C7F760 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#debug log\nset -x\n\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		CBD82BD9EAAF92B73622658B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GS1Barcode_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B6FC0E428C9E90700C7F760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6FC0F028C9E90700C7F760 /* ExampleGS1BarcodeViewController.swift in Sources */,
+				6B6FC0EC28C9E90700C7F760 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B6FC11828CA13F100C7F760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B41DF5228CA1CD8005898D9 /* GS1BarcodeParserTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B6FC12128CA13F100C7F760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B6FC0E728C9E90700C7F760 /* GS1Barcode_Example */;
+			targetProxy = 6B6FC12028CA13F100C7F760 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B6FC0F128C9E90700C7F760 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B6FC0F228C9E90700C7F760 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B6FC0F628C9E90700C7F760 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B6FC0F728C9E90700C7F760 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B6FC0FA28C9E90700C7F760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B6FC0FB28C9E90700C7F760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B6FC0FD28C9E90700C7F760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB1723C075A305879D205CA3 /* Pods-GS1Barcode_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MW2UF479VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GS1Barcode_Example/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shakuro.GS1Barcode-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B6FC0FE28C9E90700C7F760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E98EE904A58C65837C78AB3C /* Pods-GS1Barcode_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MW2UF479VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GS1Barcode_Example/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shakuro.GS1Barcode-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B6FC12228CA13F100C7F760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MW2UF479VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shakuro.GS1Barcode-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GS1Barcode_Example.app/GS1Barcode_Example";
+			};
+			name = Debug;
+		};
+		6B6FC12328CA13F100C7F760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MW2UF479VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shakuro.GS1Barcode-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GS1Barcode_Example.app/GS1Barcode_Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B6FC0E328C9E90700C7F760 /* Build configuration list for PBXProject "GS1Barcode_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B6FC0FA28C9E90700C7F760 /* Debug */,
+				6B6FC0FB28C9E90700C7F760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B6FC0FC28C9E90700C7F760 /* Build configuration list for PBXNativeTarget "GS1Barcode_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B6FC0FD28C9E90700C7F760 /* Debug */,
+				6B6FC0FE28C9E90700C7F760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B6FC12428CA13F100C7F760 /* Build configuration list for PBXNativeTarget "GS1Barcode_ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B6FC12228CA13F100C7F760 /* Debug */,
+				6B6FC12328CA13F100C7F760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B6FC0E028C9E90700C7F760 /* Project object */;
+}
