@@ -2,7 +2,7 @@
 //
 //
 
-@testable import GS1Barcode_Framework
+@testable import GS1BarcodeParser_Framework
 import XCTest
 
 final class GS1BarcodeParserTest: XCTestCase {

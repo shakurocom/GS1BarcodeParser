@@ -16,10 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		132EFFC57C4798A0E1A2F87B /* Pods-GS1Barcode_Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1Barcode_Framework.release.xcconfig"; path = "Target Support Files/Pods-GS1Barcode_Framework/Pods-GS1Barcode_Framework.release.xcconfig"; sourceTree = "<group>"; };
 		1BBD943C38414756C464B243 /* Pods_GS1BarcodeParser_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GS1BarcodeParser_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42E7B6096D619D10E97A215D /* Pods-GS1Barcode_Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1Barcode_Framework.debug.xcconfig"; path = "Target Support Files/Pods-GS1Barcode_Framework/Pods-GS1Barcode_Framework.debug.xcconfig"; sourceTree = "<group>"; };
-		6B41DF4D28CA1AD6005898D9 /* Shakuro.GS1Barcode.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Shakuro.GS1Barcode.podspec; sourceTree = "<group>"; };
 		6B6FC0D528C9E8D900C7F760 /* GS1BarcodeParser_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GS1BarcodeParser_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6FC0D828C9E8D900C7F760 /* GS1Barcode_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GS1Barcode_Framework.h; sourceTree = "<group>"; };
 		6B6FC10228C9EE0400C7F760 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
@@ -29,6 +26,7 @@
 		6B6FC10C28C9F09C00C7F760 /* GS1BarcodeParser.DefaultElementDescriptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GS1BarcodeParser.DefaultElementDescriptions.swift; path = Source/GS1BarcodeParser.DefaultElementDescriptions.swift; sourceTree = "<group>"; };
 		6B6FC10E28C9F09C00C7F760 /* GS1Barcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GS1Barcode.swift; path = Source/GS1Barcode.swift; sourceTree = "<group>"; };
 		6B6FC10F28C9F09C00C7F760 /* GS1BarcodeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GS1BarcodeParser.swift; path = Source/GS1BarcodeParser.swift; sourceTree = "<group>"; };
+		6BD6F08C28CB30B900E5E7EB /* Shakuro.GS1BarcodeParser.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Shakuro.GS1BarcodeParser.podspec; sourceTree = "<group>"; };
 		A3E4BC841890FDA7D4BF601D /* Pods-GS1BarcodeParser_Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1BarcodeParser_Framework.debug.xcconfig"; path = "Target Support Files/Pods-GS1BarcodeParser_Framework/Pods-GS1BarcodeParser_Framework.debug.xcconfig"; sourceTree = "<group>"; };
 		BE85971B3B43745B1DF0119F /* Pods-GS1BarcodeParser_Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1BarcodeParser_Framework.release.xcconfig"; path = "Target Support Files/Pods-GS1BarcodeParser_Framework/Pods-GS1BarcodeParser_Framework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,8 +54,6 @@
 		5042595121338FAB4DAB60CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				42E7B6096D619D10E97A215D /* Pods-GS1Barcode_Framework.debug.xcconfig */,
-				132EFFC57C4798A0E1A2F87B /* Pods-GS1Barcode_Framework.release.xcconfig */,
 				A3E4BC841890FDA7D4BF601D /* Pods-GS1BarcodeParser_Framework.debug.xcconfig */,
 				BE85971B3B43745B1DF0119F /* Pods-GS1BarcodeParser_Framework.release.xcconfig */,
 			);
@@ -69,7 +65,7 @@
 			children = (
 				6B6FC10228C9EE0400C7F760 /* LICENSE.md */,
 				6B6FC10428C9EE0D00C7F760 /* README.md */,
-				6B41DF4D28CA1AD6005898D9 /* Shakuro.GS1Barcode.podspec */,
+				6BD6F08C28CB30B900E5E7EB /* Shakuro.GS1BarcodeParser.podspec */,
 				6B6FC11428C9F0B400C7F760 /* Source */,
 				6B6FC0D728C9E8D900C7F760 /* GS1BarcodeParser_Framework */,
 				1968619876F1B295E4790563 /* Frameworks */,

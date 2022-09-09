@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B41DF5228CA1CD8005898D9 /* GS1BarcodeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41DF5028CA1C96005898D9 /* GS1BarcodeParserTest.swift */; };
 		6B41DF5428CA2B1A005898D9 /* BarcodeElementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41DF5328CA2B1A005898D9 /* BarcodeElementTableViewCell.swift */; };
 		6B6FC0EC28C9E90700C7F760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FC0EB28C9E90700C7F760 /* AppDelegate.swift */; };
 		6B6FC0F028C9E90700C7F760 /* ExampleGS1BarcodeParserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FC0EF28C9E90700C7F760 /* ExampleGS1BarcodeParserViewController.swift */; };
@@ -17,6 +16,7 @@
 		6B6FC10028C9EC7A00C7F760 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6B6FC0FF28C9EC7900C7F760 /* .swiftlint.yml */; };
 		6BD6F06628CB26C500E5E7EB /* GS1BarcodeParser_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD6F06528CB26C500E5E7EB /* GS1BarcodeParser_Framework.framework */; };
 		6BD6F06728CB26C500E5E7EB /* GS1BarcodeParser_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD6F06528CB26C500E5E7EB /* GS1BarcodeParser_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6BD6F08B28CB2EE400E5E7EB /* GS1BarcodeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6F08A28CB2EE400E5E7EB /* GS1BarcodeParserTest.swift */; };
 		D5B90ADB6C7339AEDB937DD8 /* Pods_GS1BarcodeParser_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2D35E362A04755AB49F3BF /* Pods_GS1BarcodeParser_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +46,6 @@
 
 /* Begin PBXFileReference section */
 		3B4A3A4B4591C4C3D6AA0200 /* Pods-GS1BarcodeParser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1BarcodeParser_Example.release.xcconfig"; path = "Target Support Files/Pods-GS1BarcodeParser_Example/Pods-GS1BarcodeParser_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6B41DF4928CA176D005898D9 /* GS1Barcode_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GS1Barcode_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B41DF5028CA1C96005898D9 /* GS1BarcodeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS1BarcodeParserTest.swift; sourceTree = "<group>"; };
 		6B41DF5328CA2B1A005898D9 /* BarcodeElementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeElementTableViewCell.swift; sourceTree = "<group>"; };
 		6B6FC0E828C9E90700C7F760 /* GS1BarcodeParser_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GS1BarcodeParser_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6FC0EB28C9E90700C7F760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +57,9 @@
 		6B6FC0FF28C9EC7900C7F760 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		6B6FC11C28CA13F100C7F760 /* GS1BarcodeParser_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GS1BarcodeParser_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD6F06528CB26C500E5E7EB /* GS1BarcodeParser_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GS1BarcodeParser_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD6F08A28CB2EE400E5E7EB /* GS1BarcodeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS1BarcodeParserTest.swift; sourceTree = "<group>"; };
 		A8C833F8EBF28567DEB95A54 /* Pods-GS1BarcodeParser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1BarcodeParser_Example.debug.xcconfig"; path = "Target Support Files/Pods-GS1BarcodeParser_Example/Pods-GS1BarcodeParser_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BB1723C075A305879D205CA3 /* Pods-GS1Barcode_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1Barcode_Example.debug.xcconfig"; path = "Target Support Files/Pods-GS1Barcode_Example/Pods-GS1Barcode_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DB2D35E362A04755AB49F3BF /* Pods_GS1BarcodeParser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GS1BarcodeParser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E98EE904A58C65837C78AB3C /* Pods-GS1Barcode_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1Barcode_Example.release.xcconfig"; path = "Target Support Files/Pods-GS1Barcode_Example/Pods-GS1Barcode_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,20 +85,10 @@
 		22567C1BDB65CD8E13E5A3F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BB1723C075A305879D205CA3 /* Pods-GS1Barcode_Example.debug.xcconfig */,
-				E98EE904A58C65837C78AB3C /* Pods-GS1Barcode_Example.release.xcconfig */,
 				A8C833F8EBF28567DEB95A54 /* Pods-GS1BarcodeParser_Example.debug.xcconfig */,
 				3B4A3A4B4591C4C3D6AA0200 /* Pods-GS1BarcodeParser_Example.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		6B41DF4F28CA1C96005898D9 /* GS1BarcodeTest */ = {
-			isa = PBXGroup;
-			children = (
-				6B41DF5028CA1C96005898D9 /* GS1BarcodeParserTest.swift */,
-			);
-			path = GS1BarcodeTest;
 			sourceTree = "<group>";
 		};
 		6B6FC0DF28C9E90700C7F760 = {
@@ -109,7 +96,7 @@
 			children = (
 				6CC02C99C06950802A34E87C /* Frameworks */,
 				6B6FC0EA28C9E90700C7F760 /* GS1BarcodeParser_Example */,
-				6B41DF4F28CA1C96005898D9 /* GS1BarcodeTest */,
+				6BD6F08928CB2EE400E5E7EB /* GS1BarcodeParserTest */,
 				22567C1BDB65CD8E13E5A3F7 /* Pods */,
 				6B6FC0E928C9E90700C7F760 /* Products */,
 			);
@@ -139,11 +126,18 @@
 			path = GS1BarcodeParser_Example;
 			sourceTree = "<group>";
 		};
+		6BD6F08928CB2EE400E5E7EB /* GS1BarcodeParserTest */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6F08A28CB2EE400E5E7EB /* GS1BarcodeParserTest.swift */,
+			);
+			path = GS1BarcodeParserTest;
+			sourceTree = "<group>";
+		};
 		6CC02C99C06950802A34E87C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				6BD6F06528CB26C500E5E7EB /* GS1BarcodeParser_Framework.framework */,
-				6B41DF4928CA176D005898D9 /* GS1Barcode_Framework.framework */,
 				DB2D35E362A04755AB49F3BF /* Pods_GS1BarcodeParser_Example.framework */,
 			);
 			name = Frameworks;
@@ -307,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B41DF5228CA1CD8005898D9 /* GS1BarcodeParserTest.swift in Sources */,
+				6BD6F08B28CB2EE400E5E7EB /* GS1BarcodeParserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
