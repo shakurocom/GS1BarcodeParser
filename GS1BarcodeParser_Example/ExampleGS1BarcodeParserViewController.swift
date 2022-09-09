@@ -2,7 +2,7 @@
 // Copyright (c) 2022 Shakuro (https://shakuro.com/)
 //
 
-import GS1Barcode_Framework
+import GS1BarcodeParser_Framework
 import UIKit
 
 class ExampleGS1BarcodeParserViewController: UIViewController {
