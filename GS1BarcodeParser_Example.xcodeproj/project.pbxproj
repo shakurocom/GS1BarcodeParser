@@ -13,7 +13,6 @@
 		6B6FC0F328C9E90700C7F760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6FC0F128C9E90700C7F760 /* Main.storyboard */; };
 		6B6FC0F528C9E90700C7F760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6FC0F428C9E90700C7F760 /* Assets.xcassets */; };
 		6B6FC0F828C9E90700C7F760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6FC0F628C9E90700C7F760 /* LaunchScreen.storyboard */; };
-		6B6FC10028C9EC7A00C7F760 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6B6FC0FF28C9EC7900C7F760 /* .swiftlint.yml */; };
 		6BD6F06628CB26C500E5E7EB /* GS1BarcodeParser_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD6F06528CB26C500E5E7EB /* GS1BarcodeParser_Framework.framework */; };
 		6BD6F06728CB26C500E5E7EB /* GS1BarcodeParser_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD6F06528CB26C500E5E7EB /* GS1BarcodeParser_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6BD6F08B28CB2EE400E5E7EB /* GS1BarcodeParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6F08A28CB2EE400E5E7EB /* GS1BarcodeParserTest.swift */; };
@@ -54,7 +53,6 @@
 		6B6FC0F428C9E90700C7F760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6FC0F728C9E90700C7F760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B6FC0F928C9E90700C7F760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B6FC0FF28C9EC7900C7F760 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		6B6FC11C28CA13F100C7F760 /* GS1BarcodeParser_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GS1BarcodeParser_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD6F06528CB26C500E5E7EB /* GS1BarcodeParser_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GS1BarcodeParser_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD6F08A28CB2EE400E5E7EB /* GS1BarcodeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS1BarcodeParserTest.swift; sourceTree = "<group>"; };
@@ -114,16 +112,31 @@
 		6B6FC0EA28C9E90700C7F760 /* GS1BarcodeParser_Example */ = {
 			isa = PBXGroup;
 			children = (
-				6B6FC0F928C9E90700C7F760 /* Info.plist */,
 				6B6FC0EB28C9E90700C7F760 /* AppDelegate.swift */,
+				6BB6A4B828D4A9290006D7D1 /* Resources */,
+				6BB6A4B728D4A9170006D7D1 /* UI */,
+			);
+			path = GS1BarcodeParser_Example;
+			sourceTree = "<group>";
+		};
+		6BB6A4B728D4A9170006D7D1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
 				6B41DF5328CA2B1A005898D9 /* BarcodeElementTableViewCell.swift */,
 				6B6FC0EF28C9E90700C7F760 /* ExampleGS1BarcodeParserViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6BB6A4B828D4A9290006D7D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B6FC0F928C9E90700C7F760 /* Info.plist */,
 				6B6FC0F428C9E90700C7F760 /* Assets.xcassets */,
-				6B6FC0FF28C9EC7900C7F760 /* .swiftlint.yml */,
 				6B6FC0F628C9E90700C7F760 /* LaunchScreen.storyboard */,
 				6B6FC0F128C9E90700C7F760 /* Main.storyboard */,
 			);
-			path = GS1BarcodeParser_Example;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		6BD6F08928CB2EE400E5E7EB /* GS1BarcodeParserTest */ = {
@@ -150,8 +163,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B6FC0FC28C9E90700C7F760 /* Build configuration list for PBXNativeTarget "GS1BarcodeParser_Example" */;
 			buildPhases = (
+				6BB6A4BC28D4AA4E0006D7D1 /* Swiftlint */,
 				CBD82BD9EAAF92B73622658B /* [CP] Check Pods Manifest.lock */,
-				6B6FC10128C9EC9300C7F760 /* Swiftlint */,
 				6B6FC0E428C9E90700C7F760 /* Sources */,
 				6B6FC0E528C9E90700C7F760 /* Frameworks */,
 				6B6FC0E628C9E90700C7F760 /* Resources */,
@@ -227,7 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B6FC10028C9EC7A00C7F760 /* .swiftlint.yml in Resources */,
 				6B6FC0F828C9E90700C7F760 /* LaunchScreen.storyboard in Resources */,
 				6B6FC0F528C9E90700C7F760 /* Assets.xcassets in Resources */,
 				6B6FC0F328C9E90700C7F760 /* Main.storyboard in Resources */,
@@ -244,7 +256,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6B6FC10128C9EC9300C7F760 /* Swiftlint */ = {
+		6BB6A4BC28D4AA4E0006D7D1 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -459,7 +471,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MW2UF479VW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GS1BarcodeParser_Example/Info.plist;
+				INFOPLIST_FILE = GS1BarcodeParser_Example/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -490,7 +502,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MW2UF479VW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GS1BarcodeParser_Example/Info.plist;
+				INFOPLIST_FILE = GS1BarcodeParser_Example/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

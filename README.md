@@ -1,5 +1,5 @@
 
-![Shakuro GS1BarcodeParser](title_image.png)
+![Shakuro GS1BarcodeParser](Resources/title_image.png)
 <br><br>
 # GS1BarcodeParser
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
