@@ -8,8 +8,8 @@ import UIKit
 class ExampleGS1BarcodeParserViewController: UIViewController {
 
     enum Constant {
-        static let exampleCellIdentifier: String = "barcodeExampleTableViewCell"
-        static let barcodeElementCellIdentifier: String = "barcodeElementTableViewCell"
+        static let exampleBarcodeCellID: String = "barcodeExampleTableViewCell"
+        static let barcodeElementCellID: String = "barcodeElementTableViewCell"
     }
 
     @IBOutlet private var barcodeExamplesTableView: UITableView!
@@ -61,12 +61,12 @@ extension ExampleGS1BarcodeParserViewController: UITableViewDataSource, UITableV
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if tableView == barcodeExamplesTableView {
-            let cell = tableView.dequeueReusableCell(withIdentifier: Constant.exampleCellIdentifier, for: indexPath)
+        if tableView === barcodeExamplesTableView {
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constant.exampleBarcodeCellID, for: indexPath)
             cell.textLabel?.text = barcodeExamples[indexPath.row]
             return cell
         } else {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.barcodeElementCellIdentifier, for: indexPath) as? BarcodeElementTableViewCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: Constant.barcodeElementCellID, for: indexPath) as? BarcodeElementTableViewCell else {
                 return UITableViewCell()
             }
             cell.setup(barcodeElement: barcodeElements[indexPath.row])
@@ -75,18 +75,13 @@ extension ExampleGS1BarcodeParserViewController: UITableViewDataSource, UITableV
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if tableView == barcodeExamplesTableView {
-            return NSLocalizedString("Barcode examples", comment: "")
-        } else {
-            return NSLocalizedString("Barcode elements", comment: "")
-        }
+        return tableView === barcodeExamplesTableView ? NSLocalizedString("Barcode examples", comment: "") : NSLocalizedString("Barcode elements", comment: "")
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if tableView == barcodeExamplesTableView {
+        if tableView === barcodeExamplesTableView {
             tableView.deselectRow(at: indexPath, animated: true)
-            let selectedBarcode = barcodeExamples[indexPath.row]
-            barcodeInputField.text = selectedBarcode
+            barcodeInputField.text = barcodeExamples[indexPath.row]
         }
     }
 
