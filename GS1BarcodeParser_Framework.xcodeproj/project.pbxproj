@@ -13,11 +13,9 @@
 		6B6FC11228C9F09D00C7F760 /* GS1Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FC10E28C9F09C00C7F760 /* GS1Barcode.swift */; };
 		6B6FC11328C9F09D00C7F760 /* GS1BarcodeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FC10F28C9F09C00C7F760 /* GS1BarcodeParser.swift */; };
 		6BB6A4BA28D4A97B0006D7D1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6BB6A4B928D4A9760006D7D1 /* .swiftlint.yml */; };
-		F79370D7CB920867EF0AA3E6 /* Pods_GS1BarcodeParser_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBD943C38414756C464B243 /* Pods_GS1BarcodeParser_Framework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1BBD943C38414756C464B243 /* Pods_GS1BarcodeParser_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GS1BarcodeParser_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6FC0D528C9E8D900C7F760 /* GS1BarcodeParser_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GS1BarcodeParser_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6FC0D828C9E8D900C7F760 /* GS1Barcode_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GS1Barcode_Framework.h; sourceTree = "<group>"; };
 		6B6FC10228C9EE0400C7F760 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
@@ -29,8 +27,6 @@
 		6B6FC10F28C9F09C00C7F760 /* GS1BarcodeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GS1BarcodeParser.swift; path = Source/GS1BarcodeParser.swift; sourceTree = "<group>"; };
 		6BB6A4B928D4A9760006D7D1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		6BD6F08C28CB30B900E5E7EB /* Shakuro.GS1BarcodeParser.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Shakuro.GS1BarcodeParser.podspec; sourceTree = "<group>"; };
-		A3E4BC841890FDA7D4BF601D /* Pods-GS1BarcodeParser_Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1BarcodeParser_Framework.debug.xcconfig"; path = "Target Support Files/Pods-GS1BarcodeParser_Framework/Pods-GS1BarcodeParser_Framework.debug.xcconfig"; sourceTree = "<group>"; };
-		BE85971B3B43745B1DF0119F /* Pods-GS1BarcodeParser_Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GS1BarcodeParser_Framework.release.xcconfig"; path = "Target Support Files/Pods-GS1BarcodeParser_Framework/Pods-GS1BarcodeParser_Framework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,26 +34,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F79370D7CB920867EF0AA3E6 /* Pods_GS1BarcodeParser_Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1968619876F1B295E4790563 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1BBD943C38414756C464B243 /* Pods_GS1BarcodeParser_Framework.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5042595121338FAB4DAB60CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A3E4BC841890FDA7D4BF601D /* Pods-GS1BarcodeParser_Framework.debug.xcconfig */,
-				BE85971B3B43745B1DF0119F /* Pods-GS1BarcodeParser_Framework.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -69,7 +54,6 @@
 				6B6FC10428C9EE0D00C7F760 /* README.md */,
 				6BD6F08C28CB30B900E5E7EB /* Shakuro.GS1BarcodeParser.podspec */,
 				6BB6A4B928D4A9760006D7D1 /* .swiftlint.yml */,
-				1968619876F1B295E4790563 /* Frameworks */,
 				6B6FC0D728C9E8D900C7F760 /* GS1BarcodeParser_Framework */,
 				5042595121338FAB4DAB60CF /* Pods */,
 				6B6FC0D628C9E8D900C7F760 /* Products */,
@@ -123,7 +107,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B6FC0DC28C9E8D900C7F760 /* Build configuration list for PBXNativeTarget "GS1BarcodeParser_Framework" */;
 			buildPhases = (
-				BBD720D82031C555FC765D12 /* [CP] Check Pods Manifest.lock */,
 				6B6FC0D028C9E8D900C7F760 /* Headers */,
 				6B6FC0D128C9E8D900C7F760 /* Sources */,
 				6B6FC0D228C9E8D900C7F760 /* Frameworks */,
@@ -181,31 +164,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		BBD720D82031C555FC765D12 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GS1BarcodeParser_Framework-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B6FC0D128C9E8D900C7F760 /* Sources */ = {
@@ -344,7 +302,6 @@
 		};
 		6B6FC0DD28C9E8D900C7F760 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3E4BC841890FDA7D4BF601D /* Pods-GS1BarcodeParser_Framework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,7 +333,6 @@
 		};
 		6B6FC0DE28C9E8D900C7F760 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE85971B3B43745B1DF0119F /* Pods-GS1BarcodeParser_Framework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
