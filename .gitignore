@@ -9,6 +9,7 @@
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
+profile
 .DS_Store
 *.moved-aside
 DerivedData
