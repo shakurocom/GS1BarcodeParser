@@ -54,10 +54,10 @@
 				6B6FC10428C9EE0D00C7F760 /* README.md */,
 				6BD6F08C28CB30B900E5E7EB /* Shakuro.GS1BarcodeParser.podspec */,
 				6BB6A4B928D4A9760006D7D1 /* .swiftlint.yml */,
+				6B6FC11428C9F0B400C7F760 /* Source */,
 				6B6FC0D728C9E8D900C7F760 /* GS1BarcodeParser_Framework */,
 				5042595121338FAB4DAB60CF /* Pods */,
 				6B6FC0D628C9E8D900C7F760 /* Products */,
-				6B6FC11428C9F0B400C7F760 /* Source */,
 			);
 			sourceTree = "<group>";
 		};

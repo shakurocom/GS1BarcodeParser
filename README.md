@@ -11,6 +11,9 @@
 - [Usage](#usage)
 - [License](#license)
 
+A `GS1BarcodeParser` provides parsing of GS1 Barcodes.
+Library also provides general purpose validator for barcode's content.
+
 ## Requirements
 
 - iOS 11.0+
@@ -38,6 +41,19 @@ $ pod install
 If you prefer not to use CocoaPods, you can integrate Shakuro.GS1BarcodeParser simply by copying it to your project.
 
 ## Usage
+
+### Parser
+
+    let barcodeParser = GS1BarcodeParser()
+    barcodeParser.validation = .none // .soft, .hard
+    var barcodeElements: [GS1Barcode.Element] = []
+
+    let barcode: String = "8017123456789012345678\u{1D}8018123456789012345678\u{1D}80191234567890"
+    do {
+        barcodeElements = try barcodeParser.parse(string: barcode).elements
+    } catch let error {
+        // handle error
+    }
 
 Have a look at the [GS1BarcodeParser_Example](https://github.com/shakurocom/GS1BarcodeParser/tree/master/GS1BarcodeParser_Example)
 
